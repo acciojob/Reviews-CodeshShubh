@@ -48,7 +48,7 @@ const previouseBtnHandler = () => {
 
   return (
     <div className="review">
-        <p className='author' id={`author-${id}`}>author's name: {name}</p>
+        <p className='author' id={`author-id-${id}`}>author's name: {name}</p>
         <p className='job'>job: {job}</p>
         <p className='info'>description: {text}</p>
         <p className='person-img'>
