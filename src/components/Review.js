@@ -38,11 +38,17 @@ const previouseBtnHandler = () => {
     } 
   };
 
+  const randomHandler =()=>{
+      const randomNumber = Math.floor(Math.random()*data.length)
+      console.log(randomNumber)
+      setIndex(randomNumber)
+  }
+
 
 
   return (
     <div className="review">
-        <p className='author' id='author-id'>author's name: {name}</p>
+        <p className='author' id={`author-${id}`}>author's name: {name}</p>
         <p className='job'>job: {job}</p>
         <p className='info'>description: {text}</p>
         <p className='person-img'>
@@ -51,6 +57,7 @@ const previouseBtnHandler = () => {
         <div>
             <button className='prev-btn' onClick={previouseBtnHandler}>Previous</button>
             <button className='next-btn' onClick={nextBtnHandler}>Next</button>
+            <button className='random-btn' onClick={randomHandler}>Random</button>
         </div>
     </div>
   )
