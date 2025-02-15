@@ -55,8 +55,8 @@ const previouseBtnHandler = () => {
             <img src={image} alt='img' width={'300px'} height={'400px'}/>
         </p>
         <div>
-            <button className='prev-btn' onClick={previouseBtnHandler}>Previous</button>
-            <button className='next-btn' onClick={nextBtnHandler}>Next</button>
+            <button className='prev-btn' id={`author-${id}`} onClick={previouseBtnHandler}>Previous</button>
+            <button className='next-btn' id={`author-${id}`} onClick={nextBtnHandler}>Next</button>
             <button className='random-btn' onClick={randomHandler}>surprise me</button>
         </div>
     </div>
