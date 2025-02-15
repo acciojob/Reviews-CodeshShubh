@@ -57,7 +57,7 @@ const previouseBtnHandler = () => {
         <div>
             <button className='prev-btn' onClick={previouseBtnHandler}>Previous</button>
             <button className='next-btn' onClick={nextBtnHandler}>Next</button>
-            <button className='random-btn' onClick={randomHandler}>Random</button>
+            <button className='random-btn' onClick={randomHandler}>surprise me</button>
         </div>
     </div>
   )
